@@ -40,7 +40,10 @@ body {
     color: var(--dourado);
 }
 
-.categoria {
+.categoria,
+.etiqueta,
+.tipo,
+.quantidade{
     font-size: 10px;
     letter-spacing: 2px;
     font-weight: 700;
@@ -52,6 +55,162 @@ main {
     padding: 0 7%;
 }
 
+.etiqueta {
+    color: #9a7d50;
+    margin-bottom: 18px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(38px, 6vw, 68px);
+    letter-spacing: -2px;
+}
+
+.descricao {
+    color: var(--secundaria);
+}
+
+.apresentacao {
+    padding: 90px 0 75px;
+    max-width: 720px;
+}
+
+.apresentacao .descricao {
+    max-width: 490px;
+    margin-top: 22px;
+    font-size: 16px;
+}
+
+.titulo-secao {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 28px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.produto {
+    background: var(--branco);
+    border: 1px solid var(--borda);
+    transition: transform 0.2s ease;
+}
+
+.produto:hover {
+    transform: translateY(-4px);
+}
+
+.imagem-produto {
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.tempo {
+    background: #e2e5e5;
+}
+
+.simbolo {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 92px;
+    color: var(--texto);
+}
+
+.codigo {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    color: var(--texto);
+    font-size: 9px;
+}
+
+.informacoes {
+    padding: 22px;
+}
+
+.tipo {
+    color: var(--secundaria);
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.descricao-produto {
+    color: var(--secundaria);
+    font-size: 13px;
+    min-height: 63px;
+}
+
+.preco {
+    margin-top: 18px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.compra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 75px 0;
+    padding: 38px;
+    background: var(--texto);
+    color: var(--branco);
+}
+
+.compra h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.compra p {
+    font-size: 14px;
+    max-width: 500px;
+    color: #9a7d50;
+
+}
+
+button {
+    flex-shrink: 0;
+    border: none;
+    background: #d6bd91;
+    color: #172238;
+    padding: 16px 22px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #ead8b7;
+}
+
+button span {
+    margin-left: 12px;
+}
 
 footer {
     display: flex;
